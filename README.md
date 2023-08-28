@@ -72,9 +72,9 @@ The backend server will be running at `http://localhost:5000`.
 
 ### Frontend Setup
 
-1. Navigate to the `frontend/` directory:
+1. Navigate to the `frontend_restaurant/` directory:
 ```bash
-cd frontend
+cd frontend_restaurant
 ```
 
 2. Open `index.html` in a web browser to interact with the CRUD Restaurant application.
@@ -86,10 +86,10 @@ cd frontend
 
 ## API Endpoints
 
-- `GET /api/restaurants`: Get a list of all restaurants.
-- `GET /api/restaurants/:id`: Get details of a specific restaurant by ID.
-- `POST /api/restaurants`: Create a new restaurant.
-- `PUT /api/restaurants/:id`: Update restaurant details by ID.
-- `DELETE /api/restaurants/:id`: Delete a restaurant by ID.
+- `GET /restaurants`: Get a list of all restaurants.
+- `GET /restaurants/:id`: Get details of a specific restaurant by ID.
+- `POST /restaurants`: Create a new restaurant.
+- `PUT /restaurants/:id`: Update restaurant details by ID.
+- `DELETE /restaurants/:id`: Delete a restaurant by ID.
 
 
