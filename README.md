@@ -12,8 +12,7 @@ Welcome to the CRUD Restaurant application! This project allows you to perform C
   - [Frontend Setup](#frontend-setup)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Introduction
 
