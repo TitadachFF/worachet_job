@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restaurant</title>
+    <script src="add.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <!---Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <!--Google Front-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&family=Merriweather:ital,wght@0,700;1,700&family=Rubik&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1>My Reataurant</h1>
+        <div id="restaurants" class="row">
+            <from>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Restaurant Name</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="type" class="form-label">Restauran Type</label>
+                        <input type="text" class="form-control" id="type">
+                    </div>
+                    <div class="mb-3">
+                        <label for="imageurl" class="form-label">Restaurant Image URL</label>
+                        <input type="text" class="form-control" id="imageurl">
+                    </div>
+                    <button type="submit" class="btn btn-primary"onclick="addResto()" >Submit</button>
+                </form>
+            </from>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
