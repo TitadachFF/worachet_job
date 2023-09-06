@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Restaurant = require("../controller/restaurant.controller");
+const Restaurant = require("../controllers/restaurant.controller");
 
 // http://localhost:5000/restaurant
 router.post("/restaurants", async (req, res) => {
@@ -18,7 +18,7 @@ router.post("/restaurants", async (req, res) => {
 router.get("/restaurants", async(req, res)=>{
 try{
 
-<<<<<<< HEAD
+
 const restaurants = await Restaurant.getAll();
 res.status(200).json(restaurants);
 } catch (error){
@@ -85,7 +85,7 @@ try {
 
     });
 module.exports = router;
-=======
+
 router.get("/restaurants", async (req, res) => {
     try {
         const restaurants = await Restaurant.getAll();
@@ -152,4 +152,4 @@ router.delete("/restaurants/:id", async (req, res) => {
 });
 
 module.exports = router;
->>>>>>> 5917fc43546bcd9ab181f39fee6296eef4d93bd0
+ 

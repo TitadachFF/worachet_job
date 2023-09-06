@@ -1,12 +1,18 @@
 const {
     Sequelize
 } = require("sequelize");
-const dbConfig = require("../config/db.config");
+const dbConfig = require("../config/dbconfig");
 //Create sequelize instance
 const sequelize = new Sequelize(dbConfig.DB, dbConfig.USER, dbConfig.PASSWORD, {
     host: dbConfig.HOST,
-    dialect: "mysql"
-})
+    dialect: "mysql",
+    dialectOptions:{
+        ssl:{
+            require: true,
+            rejectUnauthorized: false,
+        },
+    },
+});
 
 async function testConnection() {
     try {

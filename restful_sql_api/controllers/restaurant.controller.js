@@ -18,7 +18,7 @@ Restaurant.getAll = async () => {
         
         return restaurants.map(restaurant => restaurant.toJSON());
 
-<<<<<<< HEAD
+
     }catch (error){
         console.error("error:",error);
         throw error;
@@ -69,7 +69,7 @@ Restaurant.removeById = async(id)=>{
         throw error;
     }
 };
-=======
+
 Restaurant.getAll = async () => {
     try {
         const restaurants = await Restaurant.findAll();
@@ -141,5 +141,5 @@ Restaurant.removeById = async (id) => {
     }
 };
 
->>>>>>> 5917fc43546bcd9ab181f39fee6296eef4d93bd0
+
 module.exports = Restaurant;
